@@ -7,7 +7,7 @@
 # Supported tags and respective Dockerfile links
 
 * [`18`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node18), [`node18`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node18), [`latest`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node18)
-* [`16`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node16), [`node16`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node16), [`lts`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node16)
+* [`16`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node16), [`node16`](https://github.com/germainlefebvre4/meta-docker/blob/main/Dockerfile-node16)
 
 
 # Getting started
@@ -33,6 +33,9 @@ meta is packaged with a few of these core plugins by default: https://github.com
 
 ```Dockerfile
 FROM node:18
+
+WORKDIR /app
+
 RUN npm i -g meta
 ```
 
