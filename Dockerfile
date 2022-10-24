@@ -1,7 +1,1 @@
-FROM node:18
-
-WORKDIR /app
-
-RUN npm i -g meta
-
-
+Dockerfile-node18
